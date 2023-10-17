@@ -97,3 +97,19 @@ p {
     font-size: 24px; /* 设置图标字体大小为24px */
     margin: 0 10px; /* 可以根据需要调整图标之间的间距 */
 }
+
+/* 样式化“Download my resume”按钮 */
+.resume-button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px; /* 可以根据需要调整按钮与社交媒体图标之间的间距 */
+}
+
+.resume-button:hover {
+    background-color: #ddd; /* 按钮在鼠标悬停时的背景颜色 */
+}

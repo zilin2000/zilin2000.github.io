@@ -113,3 +113,27 @@ p {
 .resume-button:hover {
     background-color: #ddd; /* 按钮在鼠标悬停时的背景颜色 */
 }
+
+#experience .experience-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#experience .left-column {
+    flex: 1;
+}
+
+#experience .right-column {
+    flex: 3;
+}
+
+#experience .resume-item ul {
+    line-height: 2; /* 设置行间距为1.5倍文字大小，可以根据需要调整 */
+}
+
+#experience .left-column img {
+    max-width: 100%; /* 图片最大宽度为其容器的宽度 */
+    height: auto; /* 自适应高度，保持宽高比 */
+}
+

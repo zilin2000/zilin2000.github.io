@@ -38,3 +38,62 @@ h1 {
 p {
     font-size: 18px;
 }
+
+/* 添加以下 CSS 规则以分布 Home 部分的布局 */
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-content {
+    flex: 3; /* 占据 75% 的宽度 */
+    padding-right: 20px; /* 右边留适当的页边距 */
+    line-height: 2;
+}
+
+.text-content h2,
+.text-content p {
+    margin-bottom: 10px; /* 添加底部间距 */
+}
+
+.text-content p {
+    font-size: 16px; /* 减小段落的字体大小 */
+    line-height: 1.5; /* 增加行高 */
+}
+
+.image-content {
+    flex: 1; /* 占据 25% 的宽度 */
+}
+
+.image-content img {
+    max-width: 200%; /* 图片宽度自适应 */
+    height: 200%; /* 保持宽高比 */
+}
+
+/* 添加以下 CSS 规则以样式化箭头按钮 */
+.arrow-button {
+    background: none;
+    border: none;
+    font-size: 36px; /* 增大按钮字体大小 */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: pink; /* 设置按钮颜色为粉色 */
+}
+
+.left-arrow {
+    left: 10px; /* 左箭头的位置 */
+}
+
+.right-arrow {
+    right: 10px; /* 右箭头的位置 */
+}
+
+/* 在CSS中增大Font Awesome图标的大小 */
+.social-icons a i {
+    font-size: 24px; /* 设置图标字体大小为24px */
+    margin: 0 10px; /* 可以根据需要调整图标之间的间距 */
+}

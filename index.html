@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Zilin Xu - Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -17,10 +18,41 @@
         </nav>
     </header>
     <div class="container">
-        <section id="home">
-            <h1>Welcome to Zilin Xu's Blog</h1>
-            <p>This is the home section of my blog. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- 在Home部分的<section>中添加以下内容 -->
+        <section id="home" class="home-section">
+            <div class="text-content">
+                <h1>Welcome to Zilin Xu's Blog</h1>
+                <div class="description">
+                    <h2>Hi, there 🙋!</h2>
+                    <p>My name is <strong>Zilin Xu</strong>, a current graduate student studying at Duke University ECE program. I will graduate in May 2024.</p>
+                    <h2>Here are my professional skills:</h2>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> Proficient in Java and Python, with experience as a teaching assistant. Competent in C/C++, SQL, HTML, CSS, and JavaScript, used for project development.</li>
+                        <li><strong>Java Web:</strong> Familiar with JSP, Servlet, JDBC, and skilled in using Tomcat and Eclipse for web project development.</li>
+                        <li><strong>Hardware Technology:</strong> Proficient in using Quartus, knowledgeable in Verilog, and have written ALU and Register.</li>
+                        <li><strong>Domain Knowledge:</strong> Familiar with Java design patterns, databases, computer networks, operating systems, Linux systems, and proficient in software testing (using JUnit).</li>
+                        <li><strong>Frameworks:</strong> Proficient in Springboot, with contributions to projects including user login/registration and group chat rooms.</li>
+                        <li><strong>Tools:</strong> Proficient in using Git. Skilled in using development tools like VSCode and IntelliJ IDEA. Familiar with the syntax of MD and Tex files and consistently maintain document writing.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-content">
+                <div class="image-slider">
+                    <img src="1.JPG" alt="Image 1">
+                    <!-- 添加更多图片 -->
+                    <p>Check out my </p>
+                    <div class="social-icons">
+                        <a href="mailto:zx112@duke.edu"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/bruce_zilin" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/zilin2000" target="_blank"><i class="fab fa-github"></i></a>
+                        <!-- 添加其他社交媒体和联系方式 -->
+                    </div>
+                </div>
+            </div>
         </section>
+        
+    
+
         <section id="experience">
             <h1>Experience</h1>
             <p>Here, you can learn about my professional experience and background.</p>
@@ -38,5 +70,7 @@
             <p>Get to know me better and my interests.</p>
         </section>
     </div>
+<!-- 在</body>标签之前引用JavaScript文件 -->
+<script src="script.js"></script>
 </body>
 </html>

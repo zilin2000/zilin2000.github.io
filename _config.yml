@@ -18,11 +18,12 @@ sidebar-avatar: /img/IMG_2036.JPG      # use absolute URL, seeing it's used in b
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
-zhihu_username:     qiubaiying
-github_username:    qiubaiying
-facebook_username:  baiying.qiu.7
-jianshu_username:   e71990ada2fd
+weibo_username:     Bruce的小linlin
+instagram_username:     burce_zilin
+github_username:    zilin2000
+wechat_username: 15150207001
+#facebook_username:  baiying.qiu.7
+#jianshu_username:   e71990ada2fd
 #twitter_username:   qiubaiying
 
 

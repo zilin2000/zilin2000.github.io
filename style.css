@@ -1,45 +1,56 @@
 body {
-    background-color: black;
+    background-color: #1b1b1b; 
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6; 
+    letter-spacing: 0.5px; 
 }
 
 header {
     background-color: #333;
     padding: 20px 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav {
     text-align: center;
+    transition: all 0.3s; 
 }
 
 nav a {
     text-decoration: none;
     color: white;
     margin: 0 15px;
+    padding: 5px 0; 
+    transition: all 0.3s; 
 }
 
 nav a:hover {
     text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.1); 
 }
 
 .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
+    background-color: #282828; 
+    border-radius: 5px; 
+    margin-top: 30px; 
 }
 
 h1 {
     font-size: 36px;
+    margin-bottom: 20px; 
 }
 
 p {
     font-size: 18px;
 }
 
-/* 添加以下 CSS 规则以分布 Home 部分的布局 */
 .home-section {
     display: flex;
     justify-content: space-between;
@@ -48,57 +59,54 @@ p {
 }
 
 .text-content {
-    flex: 3; /* 占据 75% 的宽度 */
-    padding-right: 20px; /* 右边留适当的页边距 */
+    flex: 3; 
+    padding-right: 20px; 
     line-height: 2;
 }
 
 .text-content h2,
 .text-content p {
-    margin-bottom: 10px; /* 添加底部间距 */
+    margin-bottom: 10px; 
 }
 
 .text-content p {
-    font-size: 16px; /* 减小段落的字体大小 */
-    line-height: 1.5; /* 增加行高 */
+    font-size: 16px; 
+    line-height: 1.5; 
 }
 
 .image-content {
-    flex: 1; /* 占据 25% 的宽度 */
+    flex: 1; 
 }
 
 .image-content img {
-    max-width: 200%; /* 图片宽度自适应 */
-    height: 200%; /* 保持宽高比 */
+    max-width: 200%; 
+    height: 200%; 
 }
 
-/* 添加以下 CSS 规则以样式化箭头按钮 */
 .arrow-button {
     background: none;
     border: none;
-    font-size: 36px; /* 增大按钮字体大小 */
+    font-size: 36px; 
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: pink; /* 设置按钮颜色为粉色 */
+    color: pink; 
 }
 
 .left-arrow {
-    left: 10px; /* 左箭头的位置 */
+    left: 10px; 
 }
 
 .right-arrow {
-    right: 10px; /* 右箭头的位置 */
+    right: 10px; 
 }
 
-/* 在CSS中增大Font Awesome图标的大小 */
 .social-icons a i {
-    font-size: 24px; /* 设置图标字体大小为24px */
-    margin: 0 10px; /* 可以根据需要调整图标之间的间距 */
+    font-size: 24px; 
+    margin: 0 10px; 
 }
 
-/* 样式化“Download my resume”按钮 */
 .resume-button {
     display: inline-block;
     background-color: white;
@@ -107,11 +115,12 @@ p {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 10px; /* 可以根据需要调整按钮与社交媒体图标之间的间距 */
+    margin-top: 10px; 
 }
 
 .resume-button:hover {
-    background-color: #ddd; /* 按钮在鼠标悬停时的背景颜色 */
+    background-color: #bbb; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
 }
 
 #experience .experience-content {
@@ -129,11 +138,10 @@ p {
 }
 
 #experience .resume-item ul {
-    line-height: 2; /* 设置行间距为1.5倍文字大小，可以根据需要调整 */
+    line-height: 2; 
 }
 
 #experience .left-column img {
-    max-width: 100%; /* 图片最大宽度为其容器的宽度 */
-    height: auto; /* 自适应高度，保持宽高比 */
+    max-width: 100%; 
+    height: auto; 
 }
-

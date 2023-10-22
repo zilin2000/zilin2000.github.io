@@ -232,4 +232,100 @@ i {
     background-color: #777;
 }
 
+.about-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform .2s;
+}
+
+.about-card:hover {
+    transform: scale(1.02);
+}
+
+.about-card h2 {
+    color: #87CEEB    ; 
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    color: white;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    text-align: left; /* 将偶数项目的文本对齐设置为左对齐 */
+    order: 2; /* 改变内容和图片的顺序，使内容在右侧 */
+}
+
+.timeline-item:nth-child(even) .timeline-img {
+    text-align: right;
+    order: 1; /* 使图片在左侧 */
+}
+
+.timeline {
+    position: relative;
+    margin: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #008080; /* 根据需要调整颜色 */
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.timeline-content, .timeline-img {
+    flex: 1;
+    padding: 10px;
+}
+
+.timeline-content {
+    text-align: right;
+}
+
+.timeline-img {
+    text-align: left;
+}
+
+.timeline-content .date {
+    display: block;
+    font-weight: bold;
+    color: #008080; /* 根据需要调整颜色 */
+}
+
+.timeline-img img {
+    max-width: 80%; /* 缩小图片的最大宽度 */
+    margin: 0 auto; /* 使图片在其容器中居中 */
+    border-radius: 8px;
+}
+
+/* 如果时间点特别多，可以考虑增加一些media query以确保在小屏幕上看起来仍然不错 */
+
+.piano-video {
+    display: block;
+    margin: 20px auto; /* 上下都有间隙，使其更加居中 */
+    max-width: 90%; /* 限制视频的最大宽度，但也允许它自适应 */
+    border-radius: 8px; /* 可选：给视频一个圆角，使其与卡片风格一致 */
+}
+
+.piano-description {
+    color: white;
+    text-align: center; /* 将描述文本居中 */
+    margin-top: 20px; /* 增加与视频之间的间距 */
+    font-size: 1.1em; /* 可选：稍微增大字体以突出重点 */
+    max-width: 80%; /* 控制最大宽度以便于阅读 */
+    margin-left: auto; /* 配合上一行代码实现居中效果 */
+    margin-right: auto; /* 配合上两行代码实现居中效果 */
+}
 

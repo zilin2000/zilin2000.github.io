@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 倒入一些外部的，用来添加些表情包之类的 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -10,12 +11,11 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    
 </head>
 <body>
     <header>
         <nav>
+            <!-- 2023.10.22:目前是home，experience，aboutme， posts，projects这几个sections -->
             <a href="#home">Home</a>
             <a href="#experience">Intern Experience</a>
             <a href="#aboutme">About Me</a>
@@ -24,6 +24,7 @@
         </nav>
     </header>
     <div class="container">
+
     <!-- 在Home部分的<section>中添加以下内容 -->
         <section id="home" class="home-section" data-aos="fade-up">
             <div class="text-content">
@@ -58,7 +59,7 @@
             </div>
         </section>
 
-
+        <!-- 实习经历 -->
         <section id="experience" class="experience-section" data-aos="slide-right">
             <h1>Intern Experience</h1>
         
@@ -79,6 +80,7 @@
             </div>
         </section>
 
+        <!-- aboutme的section -->
         <section id="aboutme" data-aos="zoom-in">
             <h1>About Me</h1>
         
@@ -143,10 +145,7 @@
 
         </section>
         
-    
-
-        
-        
+        <!-- 个人文章 -->
         <section id="posts" data-aos="fade-up">
             <h1>Posts</h1>
             <div class="post-card">
@@ -192,7 +191,8 @@
             </div>
             <!-- 您可以按照相同的格式添加更多的文章卡片 -->
         </section>
-
+        
+        <!-- 项目经历 -->
         <section id="projects" data-aos="slide-left">
             <h1>Projects</h1>
             <p>See more on my resume. But I am doing new full-stack projects right now.</p>

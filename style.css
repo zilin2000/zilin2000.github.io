@@ -10,6 +10,8 @@ body {
     padding: 0;
     line-height: 1.6; 
     letter-spacing: 0.5px; 
+    overflow-x: hidden; /* 防止横向滚动 */
+    zoom: 1。5;  /* 125% of the original size */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,11 +60,6 @@ nav a:hover {
     margin-top: 30px; 
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px; 
-}
-
 p {
     font-size: 18px;
 }
@@ -95,8 +92,8 @@ p {
 }
 
 .image-content img {
-    max-width: 200%; 
-    height: 200%; 
+    max-width: 100%;  /* 修改为100% */
+    height: auto; 
 }
 
 .arrow-button {
@@ -158,14 +155,44 @@ p {
 }
 
 #experience .right-column {
-    flex: 3;
+    /* background-color: #383838; 背景颜色 */
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);  添加稍微的阴影效果 */
+    /* ...（保持其他样式不变） */
+}
+
+#experience .resume-item h2 {
+    color: #009966; /* 金色标题 */
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+#experience .resume-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#experience .resume-item h4 {
+    font-weight: 400;
+    margin-top: 8px;
+    color: #aaa; /* 稍微淡一些的颜色 */
 }
 
 #experience .resume-item ul {
-    line-height: 2; 
+    margin-top: 20px;
+    line-height: 2;
 }
 
 #experience .left-column img {
     max-width: 100%; 
     height: auto; 
 }
+
+i {
+    margin-right: 10px; /* 添加一些右侧间距 */
+    color:#708090; /* 设置图标颜色 */
+    font-size: 20px; /* 调整图标大小 */
+}
+

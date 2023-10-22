@@ -7,7 +7,9 @@
     <title>Zilin Xu - Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    
 </head>
 <body>
     <header>
@@ -21,7 +23,7 @@
     </header>
     <div class="container">
     <!-- 在Home部分的<section>中添加以下内容 -->
-        <section id="home" class="home-section">
+        <section id="home" class="home-section" data-aos="fade-up">
             <div class="text-content">
                 <h1>Welcome to Zilin Xu's Blog</h1>
                 <div class="description">
@@ -56,7 +58,7 @@
         
     
 
-        <section id="experience" class="experience-section">
+        <section id="experience" class="experience-section" data-aos="slide-right">
             <h1>Experience</h1>
         
             <div class="experience-content">
@@ -79,18 +81,26 @@
         
         
         
-        <section id="projects">
+        <section id="projects" data-aos="slide-left">
             <h1>Projects</h1>
             <p>See more on my resume. But I am doing new full-stack projects right now.</p>
         </section>
-        <section id="posts">
+        <section id="posts" data-aos="fade-up">
             <h1>Posts</h1>
             <p>Read my latest blog posts and articles on various topics.</p>
         </section>
-        <section id="aboutme">
+        <section id="aboutme" data-aos="zoom-in">
             <h1>About Me</h1>
+            <p>Get to know me better and my interests.</p>
+            <p>Get to know me better and my interests.</p>
+            <p>Get to know me better and my interests.</p>
+            <p>Get to know me better and my interests.</p>
             <p>Get to know me better and my interests.</p>
         </section>
     </div>
+    <script>
+        AOS.init();
+      </script>
+      
 </body>
 </html>

@@ -44,7 +44,8 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFD700; /* 将字体颜色更改为金色 */
 }
 
 .container {
@@ -122,6 +123,12 @@ p {
     margin: 0 10px; 
 }
 
+.social-icons a i:hover {
+    color: #FFD700; /* 将图标颜色更改为金色 */
+    transform: scale(1.1); /* 放大图标到原始尺寸的110% */
+    transition: color 0.3s ease, transform 0.3s ease; /* 平滑的颜色和放大过渡 */
+}
+
 .resume-button {
     display: inline-block;
     background-color: white;
@@ -134,8 +141,10 @@ p {
 }
 
 .resume-button:hover {
-    background-color: #bbb; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+    background-color: #bbb;
+    transform: scale(1.05); /* 放大按钮到原始尺寸的105% */
+    transition: transform 0.3s ease; /* 平滑的放大过渡 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 #experience .experience-content {

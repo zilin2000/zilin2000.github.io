@@ -196,3 +196,40 @@ i {
     font-size: 20px; /* 调整图标大小 */
 }
 
+.post-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform .2s;
+}
+
+.post-card:hover {
+    transform: scale(1.02);
+}
+
+.post-card h2 {
+    color: #008080; /* Gold color for the title */
+    margin-bottom: 10px; /* Optional: Adds some spacing between title and description */
+}
+
+.post-card p {
+    color: white; /* White color for the description */
+}
+
+.post-btn {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+
+.post-btn:hover {
+    background-color: #777;
+}
+
+

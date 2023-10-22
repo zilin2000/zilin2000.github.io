@@ -1,11 +1,26 @@
+@media only screen and (max-width: 600px) {
+    /* 这里是手机和小屏幕设备的样式 */
+}
+
 body {
     background-color: #1b1b1b; 
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* 使用Roboto字体 */
     margin: 0;
     padding: 0;
     line-height: 1.6; 
     letter-spacing: 0.5px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* 使用Montserrat字体 */
+    font-weight: 500; 
+}
+
+h1 {
+    font-weight: 700; /* 使h1标签更加粗一些 */
+    font-size: 36px;
+    margin-bottom: 20px; 
 }
 
 header {
